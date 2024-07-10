@@ -13,4 +13,4 @@ document.getElementById('btnSubmit').addEventListener('click', function(){
     else{
         alert('toke tejjo ghoshona korlam, tui password vule gesos')
     }
-})
+}) 
