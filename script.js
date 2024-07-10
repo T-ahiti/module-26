@@ -5,7 +5,7 @@ document.getElementById('btnSubmit').addEventListener('click', function(){
    const email = emailFeild.value
     // get password
     const passFeild = document.getElementById('userPassword')
-    const pass = passFeild.value
+    const password = passFeild.value
     // dont do this** but for now just, varify your email and pass
     if(email === 'sontan@baap.com' && password === 'secret' ){
         console.log('valid user')
