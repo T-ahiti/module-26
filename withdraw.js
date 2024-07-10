@@ -11,8 +11,15 @@ document.getElementById('btnWithdraw').addEventListener('click', function(){
     // get balance
     const balanceTotalElement = document.getElementById('balanceTotal')
     const constBalance = balanceTotalElement.innerText
+   
+    withdrawField.value = ''
+
+    if(currentWithdrawTotal > constBalance){
+        alert('baap er bank e eto taka nai')
+        return
+    }
+
     const newBalance =  parseFloat(constBalance) - parseFloat(currentWithdrawTotal)
     balanceTotalElement.innerText = newBalance
 
-    withdrawField.value = ''
 })
