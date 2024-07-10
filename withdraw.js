@@ -8,5 +8,11 @@ document.getElementById('btnWithdraw').addEventListener('click', function(){
     // set in withdraw card
     withdrawTotalElement.innerText = currentWithdrawTotal
 
-    
+    // get balance
+    const balanceTotalElement = document.getElementById('balanceTotal')
+    const constBalance = balanceTotalElement.innerText
+    const newBalance =  parseFloat(constBalance) - parseFloat(currentWithdrawTotal)
+    balanceTotalElement.innerText = newBalance
+
+    withdrawField.value = ''
 })
