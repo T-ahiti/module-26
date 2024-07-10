@@ -1,9 +1,12 @@
 
 document.getElementById('btnWithdraw').addEventListener('click', function(){
     const withdrawField = document.getElementById('withdrawField')
-    const newDepositAmount = withdrawField.value
-    const totalWithdraw = document.getElementById('withdrawTotal')
-    const previousWithdraw = withdrawTotal.innerText
-    withdrawTotal.innerText = totalWithdraw
+    const newWithdraw = withdrawField.value 
+    const withdrawTotalElement = document.getElementById('withdrawTotal')
+    const previousWithdrawTotal = withdrawTotalElement.innerText
+    const currentWithdrawTotal = parseFloat(previousWithdrawTotal) + parseFloat(newWithdraw)
+    // set in withdraw card
+    withdrawTotalElement.innerText = currentWithdrawTotal
+
     
 })
