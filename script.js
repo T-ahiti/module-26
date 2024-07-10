@@ -8,9 +8,9 @@ document.getElementById('btnSubmit').addEventListener('click', function(){
     const password = passFeild.value
     // dont do this** but for now just, varify your email and pass
     if(email === 'sontan@baap.com' && password === 'secret' ){
-        console.log('valid user')
+        window.location.href = 'bank.html'
     }
     else{
-        console.log('invalid user')
+        alert('toke tejjo ghoshona korlam, tui password vule gesos')
     }
 })
